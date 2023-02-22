@@ -53,6 +53,12 @@ public class Scheduler {
         digraph.addTask(task4);
         digraph.addTask(task5);
         digraph.addTask(task6);
+
+        /*  3->2->1
+            4->2
+              2->6
+              5->1
+        */
         digraph.addEdge(task1, task2);
         digraph.addEdge(task1, task5);
         digraph.addEdge(task6, task2);
